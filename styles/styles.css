@@ -6,6 +6,7 @@ html{
 }
 body{
     background-color: #101014;
+    color:white;
 }
 nav{
     background-color: #3B3B3B;
@@ -110,5 +111,30 @@ nav li:hover{
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
-  
-  
+  .box-1 img{
+    margin-top:10px;
+    margin-left:50px;
+    width: 350px;
+    border-radius : 3px;
+  }
+  #game-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top:20px;
+  }
+#game-list li{
+  list-style:none;
+}
+#game-list p{
+  padding-top: 10px;
+  text-decoration: none;
+}  
+#game-list img{
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#game-list a{
+  text-decoration: none;
+  color:red;
+}
+
