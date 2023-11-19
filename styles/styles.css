@@ -155,14 +155,70 @@ nav li:hover{
 }
 /* Home Page */
 .section-1 img{
+  
   height:1000px;
   width : 1880px;
   border-radius : 5px;
   transition: filter 0.5s ease;
   
 }
+
 .section-1 img:hover{
   color:black;
   opacity:0.7;
   filter: blur(10px);
+}
+.section-1 img:hover::after{
+  content:'GTA V';
+  position:absolute;
+  top:50%;
+  bottom:50%;
+  transform : translate(-50%,-50%);
+  padding:10px 20px;
+  background-color: aqua;
+  color:blue;
+  border:2px solid orange;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.7 0.5s ease ;
+  
+}
+.section-1 button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  height:50px;
+  width:100px;
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.section-1 button a{
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+button:hover a{
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
