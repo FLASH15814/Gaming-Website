@@ -7,6 +7,7 @@ html{
 body{
     background-color: #000000;
     color:white;
+    margin: 0;
 }
 nav{
     background-color:rgb(0, 0, 0);
@@ -33,7 +34,15 @@ nav li{
     padding-top:25px;   
     margin-right:20px;
     transition: all 0.5s;
-    
+    animation: slideInLeft 0.5s ease-in-out;
+}
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
 nav li a{
     text-decoration:none;
@@ -51,6 +60,7 @@ nav li:hover{
     border-radius:5px;
     margin-top:25px;
 }
+
 
 .search-box{
     margin-top:10px;
@@ -93,6 +103,7 @@ nav li:hover{
     color:#ffffff ;
     background-color:transparent;
     pointer-events: painted;  
+    
   }
   .btn-search img{
     height: 20px;
@@ -154,12 +165,15 @@ nav li:hover{
 #game-list a:hover{
   color:blue;
 }
+
+
 /* Home Page */
 .section-1 img{
   height:1100px;
   width : 1880px;
   border-radius : 5px;
   transition: filter 0.5s ease;
+  animation: fadeInUp 1s;
 }
 
 .section-1 img:hover{
@@ -177,11 +191,12 @@ nav li:hover{
   border-radius:5px;
   cursor:pointer;
   transition:0.7 0.5s ease ;
+  
 }
 .section-1 button{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -190,7 +205,9 @@ nav li:hover{
   background: transparent;
   border:none;
   width:300px;
+  animation: bounce 2s infinite;
 }
+
 .section-1 button a{
   font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
@@ -251,6 +268,7 @@ nav li:hover{
   border-right-style: outset;
   padding-right:100px;
   border-right-color: white;
+  animation: scrollDown 1s;
 }
 .wrapper-2{
   font-family: 'Teko', sans-serif;
@@ -263,6 +281,7 @@ nav li:hover{
   display: flex;
   flex-direction: row;
   transition: all 200ms ease-in-out;
+  animation: scrollDown 1s;
 }
 .image-wrapper {
   font-family: 'Teko', sans-serif;
@@ -338,8 +357,117 @@ nav li:hover{
 .wrapper:hover .image-wrapper ,.wrapper-2:hover .image-wrapper {
   width: 600px;
 }
+.wrapper-2{
+  margin-left:1000px;
+}
 
 
+
+/* Spider-man -> section-2 */
+
+
+.box-for-two {
+  margin-top:100px;
+  position: relative;
+  display: inline-flex;
+  margin-left:-45px;
+  pointer-events: none;
+  animation: fadeInUp 1s;
+  
+}
+.box-for-two .box-1 .vignette-1{
+  position: absolute;
+  margin-top:10px;
+  margin-left:50px;
+  height: 550px;
+  width:900px;
+  background: radial-gradient(circle, rgba(0,0,0,0.1825105042016807) 0%, rgba(0,0,0,0.6895133053221288) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.box-for-two .box-2{
+  margin-top:11px;
+  margin-left:85px;
+}
+.box-for-two .box-2 .vignette-2{
+  position:absolute;
+  margin-top:0px;
+  margin-left:0px;
+  height: 550px;
+  width:900px;
+  background: radial-gradient(circle, rgba(0,0,0,0.1825105042016807) 0%, rgba(0,0,0,0.6895133053221288) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.box-for-two .box-1 img,.box-for-two .box-2 img {
+  display: inline-block;
+  height: 550px;
+  width:900px;
+}
+
+
+.box-for-two .box-1 h2{
+  position:absolute;
+  font-size: 50px;
+  margin-top:-500px;
+  margin-left:100px;
+  animation: fadeInUp 1s forwards, slideInLeft_2 1s forwards; 
+   color:white;
+   font-family: 'Orbitron', sans-serif;
+   
+}
+.box-for-two .box-1 p{
+  position: absolute;
+  margin-top:-350px;
+  margin-left:100px;
+  font-family: 'Orbitron', sans-serif;
+  font-size:40px;
+}
+.box-for-two .box-2 h2{
+  position:absolute;
+  font-size: 50px;
+  margin-top:-500px;
+  margin-left:200px;
+  animation: fadeInUp 1s forwards, slideInLeft_2 1s forwards; 
+   color:white;
+   font-family: 'Orbitron', sans-serif;
+}
+.box-for-two .box-2 p{
+  position: absolute;
+  margin-top:-350px;
+  margin-left:100px;
+  font-family: 'Orbitron', sans-serif;
+  font-size:40px;
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(50%);
+  animation: slideInLeft 2s forwards;
+}
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(50%);
+  animation: slideInRight 2s forwards;
+}
+ .animate-1 {
+  opacity: 0;
+  transform: translateX(0%);
+  transition: slideInLeft 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(40%);
+} 
+.animate-2 {
+  opacity: 0;
+  transform: translateX(0%);
+  transition: slideInRight 1s;
+}
+
+.show-2 {
+  opacity: 1;
+  transform: translateX(200%);
+}
 /*Section - 2 */
 .section-2{
   display: flex;
@@ -349,6 +477,7 @@ nav li:hover{
   margin-top:300px;
 }
 .RDR2,.watch-dogs2,.AC-Valhalla{
+  pointer-events: none;
   margin-right:100px; 
   border-color: #000000;
   border-width: 1px;
@@ -544,23 +673,76 @@ button.btn-more a{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
   text-align:center;
+}
+
+
+
+
+/* Custom Animations  */
+
+
+
+
+@keyframes fadeOutandSLiderInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-50%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+@keyframes slideInRight{
+  from {
+    transform :translateX(80%);
+    opacity: 0;
+  }
+  to{
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -39,6 +39,72 @@ function displayGames(games){
     });
 }
 
+//load event for slideinleft
+document.addEventListener('DOMContentLoaded', function () {
+    const textElement = document.querySelector('.animate-1');
+
+    // Wait for the image to load
+    const image = new Image();
+    image.src = 'images/Marvel Spider-Man Miles Morales Key Art.jpg';
+    image.onload = function () {
+      // Add the 'show' class to trigger the animation
+      textElement.classList.add('show');
+    };
+});
+
+//ANIMATIONS-> slideinleft
+
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-in-left');
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  // Set up the Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+  // Target the element you want to animate
+  const targetElement = document.querySelector('.anim-slideInLeft');
+
+  // Start observing the target element
+  observer.observe(targetElement);
+
+
+  //animations -> slideinright
+
+  function handleIntersection2(entries2, observer2) {
+    entries2.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-in-right');
+        observer2.unobserve(entry.target);
+      }
+    });
+  }
+  const observer2 = new IntersectionObserver(handleIntersection2, { threshold: 0.5 });
+
+  // Target the element you want to animate
+  const targetElement2 = document.querySelector('.anim-slideInRight');
+
+  // Start observing the target element
+  observer2.observe(targetElement2);
+
+//load event for slideinright
+document.addEventListener('DOMContentLoaded', function () {
+    const textElement = document.querySelector('.animate-2');
+
+    // Wait for the image to load
+    const image = new Image();
+    image.src = 'images/spider-man-remastered.jpeg';
+    image.onload = function () {
+      // Add the 'show' class to trigger the animation
+      textElement.classList.add('show-2');
+    };
+});
+
+
 //Asynchronous Function
 
 async function fetchData() {
