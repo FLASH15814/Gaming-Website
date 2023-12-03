@@ -268,7 +268,9 @@ nav li:hover{
   border-right-style: outset;
   padding-right:100px;
   border-right-color: white;
-  animation: scrollDown 1s;
+  opacity: 0;
+  /* transform: translateX(-50%); */
+  /* animation: slideInLeft 1s; */
 }
 .wrapper-2{
   font-family: 'Teko', sans-serif;
@@ -280,9 +282,16 @@ nav li:hover{
   margin-left:1200px;
   display: flex;
   flex-direction: row;
-  transition: all 200ms ease-in-out;
-  animation: scrollDown 1s;
+  /* transition: all 200ms ease-in-out; */
+  animation: slideInRight 1s;
+  opacity: 0;
+  /* transform: translateX(-10%); */
+  /* transition: opacity 200ms ease-in-out; */
 }
+/* .wrapper-2.visible {
+  opacity: 1;
+  transform: translateX(100%);
+} */
 .image-wrapper {
   font-family: 'Teko', sans-serif;
   height: 400px;
@@ -468,6 +477,141 @@ nav li:hover{
   opacity: 1;
   transform: translateX(200%);
 }
+
+/* Spider-Man Buttons */
+
+.button-for-game {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-top:-600px;
+  margin-left: 100px;
+  position: relative;
+  width: 300px;
+  font-family: 'Orbitron', sans-serif;
+  animation: slideInLeft 0.5s ease-in-out;
+}
+.button-for-game-2{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-top:-1000px;
+  margin-left: 1480px;
+  position: relative;
+  width: 300px;
+  font-family: 'Orbitron', sans-serif;
+  animation: slideInRight 0.5s ease-in-out;
+}
+.button-for-game a,.button-for-game-2 a {
+  width: 100%;
+  max-width: 240px;
+  height: 54px;
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #ff0015;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
+  position: relative;
+  margin: 10px 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.button-for-game a:after, .button-for-game a:before,.button-for-game-2 a:after, .button-for-game-2 a:before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 8px;
+  background: #0f1923;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-for-game a:before,.button-for-game-2 a:before {
+  right: 0;
+  left: initial;
+}
+.button-for-game a p,.button-for-game-2 a p {
+  margin: 0;
+  height: 54px;
+  line-height: 54px;
+  box-sizing: border-box;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+.button-for-game a p span.base,.button-for-game-2 a p span.base {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: 1px solid #ff0015;
+  font-family: 'Orbitron', sans-serif;
+}
+.button-for-game a p span.base:before,.button-for-game-2 a p span.base:before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  left: -1px;
+  top: -1px;
+  background: #0f1923;
+  position: absolute;
+  transition: 0.3s ease-out all;
+}
+.button-for-game a p span.bg,.button-for-game-2 a p span.bg {
+  left: -5%;
+  position: absolute;
+  background: #ef0f22;
+  width: 0;
+  height: 100%;
+  z-index: 3;
+  transition: 0.3s ease-out all;
+  transform: skewX(-10deg);
+}
+.button-for-game a p span.text,.button-for-game-2 a p span.text {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size:20px;
+}
+.button-for-game a p span.text:after,.button-for-game-2 a p span.text:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  right: 0;
+  bottom: 0;
+  background: #0f1923;
+  position: absolute;
+  transition: 0.3s ease-out all;
+  z-index: 5;
+}
+.button-for-game a:hover,.button-for-game-2 a:hover {
+  color: #ece8e1;
+}
+.button-for-game a:hover span.bg,.button-for-game-2 a:hover span.bg  {
+  width: 110%;
+}
+.button-for-game a:hover span.text:after,.button-for-game-2 a:hover span.text:after {
+  background: #ece8e1;
+}
+
+
 /*Section - 2 */
 .section-2{
   display: flex;
@@ -746,3 +890,6 @@ footer{
     transform: translateY(0);
   }
 }
+
+
+

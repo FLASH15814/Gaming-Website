@@ -52,6 +52,50 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 
+//wrapper
+
+function handleIntersection(entries4, observer4) {
+  entries4.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'translateX(100%)';
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Set up the Intersection Observer
+const observer4 = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+// Target the element you want to animate
+const targetElement4 = document.querySelector('.wrapper');
+
+// Start observing the target element
+if (targetElement4) {
+  observer4.observe(targetElement4);
+}
+
+//wrapper-2
+function handleIntersection(entries3, observer3) {
+  entries3.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Set up the Intersection Observer
+const observer3 = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+// Target the element you want to animate
+const targetElement3 = document.querySelector('.wrapper-2');
+
+// Start observing the target element
+if (targetElement3) {
+  observer3.observe(targetElement3);
+}
+
 //ANIMATIONS-> slideinleft
 
 function handleIntersection(entries, observer) {
@@ -84,25 +128,28 @@ function handleIntersection(entries, observer) {
     });
   }
   const observer2 = new IntersectionObserver(handleIntersection2, { threshold: 0.5 });
-
-  // Target the element you want to animate
   const targetElement2 = document.querySelector('.anim-slideInRight');
-
-  // Start observing the target element
   observer2.observe(targetElement2);
 
 //load event for slideinright
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.querySelector('.animate-2');
-
-    // Wait for the image to load
     const image = new Image();
     image.src = 'images/spider-man-remastered.jpeg';
     image.onload = function () {
-      // Add the 'show' class to trigger the animation
       textElement.classList.add('show-2');
     };
 });
+
+
+//toggle function
+function toggleButton() {
+  const button = document.querySelector('.button');
+  button.classList.toggle('show');
+}
+
+//ToggleButton 
+
 
 
 //Asynchronous Function
