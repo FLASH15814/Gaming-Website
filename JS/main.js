@@ -42,12 +42,9 @@ function displayGames(games){
 //load event for slideinleft
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.querySelector('.animate-1');
-
-    // Wait for the image to load
     const image = new Image();
     image.src = 'images/Marvel Spider-Man Miles Morales Key Art.jpg';
     image.onload = function () {
-      // Add the 'show' class to trigger the animation
       textElement.classList.add('show');
     };
 });
@@ -64,13 +61,10 @@ function handleIntersection(entries4, observer4) {
   });
 }
 
-// Set up the Intersection Observer
 const observer4 = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-// Target the element you want to animate
 const targetElement4 = document.querySelector('.wrapper');
 
-// Start observing the target element
 if (targetElement4) {
   observer4.observe(targetElement4);
 }
@@ -85,13 +79,10 @@ function handleIntersection(entries3, observer3) {
   });
 }
 
-// Set up the Intersection Observer
 const observer3 = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-// Target the element you want to animate
 const targetElement3 = document.querySelector('.wrapper-2');
 
-// Start observing the target element
 if (targetElement3) {
   observer3.observe(targetElement3);
 }
@@ -107,14 +98,11 @@ function handleIntersection(entries, observer) {
     });
   }
 
-  // Set up the Intersection Observer
-  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+ const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-  // Target the element you want to animate
-  const targetElement = document.querySelector('.anim-slideInLeft');
+const targetElement = document.querySelector('.anim-slideInLeft');
 
-  // Start observing the target element
-  observer.observe(targetElement);
+observer.observe(targetElement);
 
 
   //animations -> slideinright
@@ -147,9 +135,6 @@ function toggleButton() {
   const button = document.querySelector('.button');
   button.classList.toggle('show');
 }
-
-//ToggleButton 
-
 
 
 //Asynchronous Function

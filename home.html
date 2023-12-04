@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Teko:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&family=Josefin+Sans:wght@200&family=Karla:wght@200&family=Nova+Square&family=Orbitron:wght@500;600&family=Poppins&family=Roboto+Condensed&family=Supermercado+One&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/GODOFWAR.TTF">
 </head>
 <body>
     <nav>
@@ -74,6 +75,8 @@
             </div>
         </div>
 
+        <video class="video-1" src="videos/1203.mp4"muted loop autoplay></video>
+
         <div class="box-for-two">
             <div class="box-1 anim-slideInLeft animate-1">
                 <div class="vignette-1"></div>
@@ -94,6 +97,34 @@
         </div>
         <div class="button-for-game-2 " onclick="toggleButton()"><a href="#">
             <p><span class="bg"></span><span class="base"></span><span class="text">Remastered</span></p></a>
+        </div>
+        <div class="this-month">
+            <!-- <img src="images/god-of-war.jpg" alt=""> -->
+            <div class="vignette-3"></div>
+            <video class="video-2" src="videos/god of war.mp4" autoplay loop muted></video>
+            <img src="images/god-of-war-logo.png" alt="">
+            <h1>THE LATEST GAME FROM EPIC <br> SERIES GOD OF WAR <br>IS OUT NOW</h1>
+
+            <div class="editions">
+                    <p class="tab-links active-link" onclick="opentab('standard_edition')">Standard Edition</p>
+                    <p class="tab-links" onclick="opentab('deluxe_edition')">Deluxe Edition</p>
+            </div>
+            <div class="tab-contents active-tab" id="standard_edition">
+                <video src="videos/1203 (2).mp4" loop autoplay muted></video>
+                <p>Experience the latest chapter in the critically acclaimed God of War series. Kratos and Atreus must journey to the highest peak of the realm to scatter his mother's ashes. Along the way they will face threats from all sorts,
+            </div> 
+            <div class="tab-contents" id="deluxe_edition">
+                <img src="images/GOW_Deluxe edition.webp" alt="">
+                <!-- <p>dsfjndsjf dshbfasjfh asioh asiuasorh asug asur iuasrf qw</p> -->
+                <div class="lis">
+                    <li>Darkdale Blades Handles</li>
+                    <li>Dark Horse digital art book</li>
+                    <li>Official digital soundtrack</li>
+                </div>
+            </div>
+        </div>
+        <div class="button-GOW button-for-game " onclick="toggleButton()"><a href="https://www.playstation.com/en-us/games/god-of-war-ragnarok/#buy-now">
+            <p><span class="bg"></span><span class="base"></span><span class="text">GOD OF WAR </span></p></a>
         </div>
         <div class="section-2 bounce">
             <div class="RDR2">
@@ -163,7 +194,28 @@
     <footer>
         © VALHALLA GAMES
     </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Trigger a click event on the Standard Edition tab
+        document.querySelector('.tab-links.active-link').click();
+    });
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.style.display = "none"; // Hide all tab contents
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).style.display = "block"; // Display the selected tab content
+    }
+        </script>
     <script src="JS/main.js"></script>
+    
 </body>
 
 </html>
