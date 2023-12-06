@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
     let result;
     const gameList = document.getElementById('game-list');
-function displayGames(games){
-    gameList.innerHTML = '';
-    games.forEach(game =>{
+    function displayGames(games){
+      gameList.innerHTML = '';
+      games.forEach(game =>{
         const div = document.createElement('div');
         //to get names/title of the games
         const li =document.createElement('li');
@@ -36,9 +36,11 @@ function displayGames(games){
         p.textContent = game.short_description;
         div.appendChild(p); 
         gameList.appendChild(div); 
-    });
-}
-
+      });
+    }
+    fetchData();
+  });
+  
 //load event for slideinleft
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.querySelector('.animate-1');
@@ -159,6 +161,4 @@ searchInput.addEventListener('keyup',(e)=>{
         return (game.title.toLowerCase().includes(searchString)|| game.short_description.toLowerCase().includes(searchString));
     });
     displayGames(filterGames);
-});
-fetchData();
 });

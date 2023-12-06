@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Elements in HTML</title>
+    <title>HOME | VALHALLA GAMES</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href ="styles/styles.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&family=Josefin+Sans:wght@200&family=Karla:wght@200&family=Nova+Square&family=Orbitron:wght@500;600&family=Poppins&family=Roboto+Condensed&family=Supermercado+One&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/GODOFWAR.TTF">
+    <link rel="stylesheet" href="styles/styles2.css">
 </head>
 <body>
+    <nav>
+        <ul>
+        <div class="image-1">
+            <a href="home.html">
+                <img src="images/logo-color.png" alt="logo">
+            </a>
+        </div>
+        <li class="home">
+            <a href="home.html">Home</a>
+        </li>
+        <li class="category">
+            <a href="Categories.html">Categories</a>
+        </li>
+        <li class="AllGames">
+            
+            <a href="AllGames.html">All Games</a>
+        </li>
+        <li class="help">
+            <a href="help.html">Help</a>
+        </li>
+        <li class="about">
+            <a href="about.html">About</a>
+        </li>
+            <div class="search-box">
+            <button class="btn-search">
+                <img src="images/search.png" >
+            </button>            
+            <input type="search" name="Search" class="input-search" placeholder="Search">
+        </div>
+        </ul>
+    </nav>
     <h1>Game Details</h1>
     <div id="gameDetails"></div>
-    <script src="./JS/connection.js"></script>
-    <script src="../connection.js"></script>
+    
+    <footer>
+        © VALHALLA GAMES
+    </footer>
+    <script src="JS/api_data.js"></script>
 </body>
 </html>
