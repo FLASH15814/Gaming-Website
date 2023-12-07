@@ -799,7 +799,7 @@ button.btn-for-editions {
 }
 .editions{
   position: absolute;
-  margin-top:-700px;
+  margin-top:-750px;
   margin-left:1200px;
  
 }
@@ -835,9 +835,9 @@ button.btn-for-editions {
   border-radius:5px;
   position: absolute;
   margin-left:1150px;
-  margin-top:-600px;
+  margin-top:-680px;
   /* margin-bottom:500px; */
-  height: 580px;
+  height: 500px;
   width:400px;
   opacity: 0.8;
   background: black;
@@ -925,6 +925,30 @@ button.btn-for-editions {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
  }
+
+
+
+
+ @font-face{
+  font-family: COD;
+  src: url(../fonts/ModernWarfare-8MM6z.ttf);
+  }
+.call-of-duty h1{
+  font-family: COD;
+  position: absolute;
+  margin-left:300px;
+  margin-top:-1000px;  
+  width:1500px;
+  font-size:40px;
+}
+
+.call-of-duty img{
+  position: absolute;
+  height: 550px;
+  width:1000px;  
+  margin-top: 100px;
+  margin-left:-1410px;
+}
 
 /*Section - 2 */
 .section-2{
@@ -1199,7 +1223,35 @@ footer{
 }
 
 
+video.video-4{
+  margin-top:-10px;
+  position: relative;
+  width: 1895px;
+}
+.call-of-duty .vignette-4{
+  position: absolute;
+  height: 1100px;
+  width:1896px;
+  margin-top:-1080px;
+  background: radial-gradient(circle, rgba(0,0,0,0.1825105042016807) 0%, rgba(0,0,0,0.6250875350140056) 0%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
 
+/* COD */
 
+.cod{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left:300px;
 
-
+  margin-top:-500px;
+}
+.cod video{
+  height: 100px;;
+}
+.cod-1,.cod-2,.cod-3{
+  padding:10px 10px 10px 10px ;
+  background-color: white;
+  border-radius:5px;
+}
