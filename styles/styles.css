@@ -927,7 +927,11 @@ button.btn-for-editions {
  }
 
 
-
+.call-of-duty{
+  opacity: 0; 
+      transform: translateY(20px);
+      animation: scrollDown 2s forwards; 
+}
 
  @font-face{
   font-family: COD;
@@ -989,8 +993,8 @@ video.video-4{
   background-color: rgba(255, 255, 255, 0.6);
   border-radius:5px;
   background-color: rgb(0, 0, 0);
-  
   box-shadow: rgba(17, 255, 0, 0.25) 0px 50px 100px -20px, rgba(9, 255, 0, 0.814) 0px 30px 60px -30px, rgba(26, 255, 0, 0.35) 0px -2px 6px 0px inset;
+  /* animation: scrollDown 1s; */
 }
 .cod-1:hover p{
   color:white;
