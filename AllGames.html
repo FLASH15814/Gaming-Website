@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | VALHALLA GAMES</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo-color.png">
     <link rel="stylesheet" href ="styles/styles.css" >
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Teko:wght@300&display=swap" rel="stylesheet">
@@ -44,7 +44,24 @@
         </div>
         </ul>
     </nav>
-    <div id="gameData"></div>
+
+
+    <div class="container"> 
+        <!-- <div class="category-filter">
+            <label for="categorySelect">Filter by Category:</label>
+            <select id="categorySelect" onchange="filterByCategory(this.value)">
+                <option value="{game.genre}">All Categories</option>
+                <option value="MMORPG">MMORPG</option>
+                <option value="FPS">FPS</option>
+                <option value="Fighting">Fighting</option>
+                <option value="MMO">MMO</option>
+                <option value="Shooter">Shooter</option>
+            <option value="ARPG">ARPG</option>
+            </select>
+        </div>    -->
+        <div id="gameData"></div>
+        
+    </div>
     <script src="JS/api_data.js"></script>
     <footer>
         © VALHALLA GAMES

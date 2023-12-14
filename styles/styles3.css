@@ -1,0 +1,16 @@
+section{
+    margin-left:200px;
+    margin-right:300px;
+}
+section article h1{
+    font-size:24px;
+    font-family: 'Roboto', sans-serif;
+}
+section article p{
+    padding-bottom:10px;
+    font-size: 13px;
+}
+section article li{
+    padding-bottom:10px;
+    font-size: 13px;
+}

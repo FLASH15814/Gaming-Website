@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
 }
 
@@ -22,20 +22,67 @@ body {
     margin-left:50px;
     box-sizing: border-box;
     margin-top:50px;
-    border:1px inset white;
+    border:1px  white;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: rgba(255, 0, 0, 0.25) 0px 54px 55px, rgba(255, 0, 0, 0.12) 0px -12px 30px, rgba(255, 0, 0, 0.12) 0px 4px 6px, rgba(255, 0, 0, 0.17) 0px 12px 13px, rgba(255, 0, 0, 0.09) 0px -3px 5px;
     padding:10px 10px 10px 10px ;
+    
 }
 .game-card:hover{
-    background-color: red;;
+    background-color: rgb(158, 46, 46);
+    transition: background-color 3s;
+}
+.game-card h3{
+    font-family: 'Star Wars';
+    text-align:center;
 }
 .game-card img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
-
-
-
-
+.game-card p{
+    font-family: 'Star Wars';
+    word-spacing: 2px;;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.game-card button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-left:180px;
+  position: relative;
+}
+.game-card button:hover,
+.game-card button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ffffff;
+}
+.game-card button:active {
+  opacity: .5;
+}
+@font-face{
+font-family:"Star Wars";
+src:url(../fonts/nasalization-rg.otf)
+}
