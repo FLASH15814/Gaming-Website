@@ -44,12 +44,12 @@ section.about-us .slideshow {
     position: absolute;
   }
   
-  input {
+input[type="radio"] {
     position: absolute;
     opacity: 0;
     top: -25px;
     counter-increment: slide;
-  }
+}
   input:checked + .slide {
     transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
@@ -86,12 +86,13 @@ section.about-us .slideshow {
   }
   
   .slide {
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     position: absolute;
     width: 50%;
     height: 100%;
     background-size: 50% 100%;
     transition: transform 0.5s ease-in-out;
+    
   }
   .slide__content {
     box-sizing: border-box;
@@ -107,11 +108,14 @@ section.about-us .slideshow {
     animation-iteration-count: 1;
     opacity: 1;
   }
+  .slide__content ul{
+    display:inline-table;
+  }
   .slide__html {
     display: none;
   }
   .slide:nth-child(2) {
-    background: url("https://via.placeholder.com/1000x2000/2E112D/fff?text=1");
+    background: url(../images/logo-color.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -130,7 +134,7 @@ section.about-us .slideshow {
     display: none;
   }
   .slide:nth-child(4) {
-    background: url("https://via.placeholder.com/1000x2000/540032/fff?text=2");
+    background: url(../images/alex-escu-TuOcOyva11I-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -149,7 +153,7 @@ section.about-us .slideshow {
     display: none;
   }
   .slide:nth-child(6) {
-    background: url("https://via.placeholder.com/1000x2000/820333/fff?text=3");
+    background: url(../images/gow.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -168,7 +172,8 @@ section.about-us .slideshow {
     display: none;
   }
   .slide:nth-child(8) {
-    background: url("https://via.placeholder.com/1000x2000/C9283E/fff?text=4");
+    /* background: url(../images/RDR2.jpg); */
+    background: url();
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -187,7 +192,7 @@ section.about-us .slideshow {
     display: none;
   }
   .slide:nth-child(10) {
-    background: url("https://via.placeholder.com/1000x2000/F0433A/fff?text=5");
+    background : url(https://cdn.pixabay.com/photo/2017/12/26/21/19/circle-3041437_1280.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -215,7 +220,7 @@ section.about-us .slideshow {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #101010 10%);
   }
   
-  label {
+label {
     box-sizing: border-box;
     color: #AAA;
     font-weight: bold;
@@ -239,30 +244,28 @@ section.about-us .slideshow {
   }
   label:nth-child(1) {
     left: calc(50% + (0 * (50% / 5)));
-    border-bottom-color: #2E112D;
+    border-bottom-color: #8e3838;
   }
   label:nth-child(2) {
     left: calc(50% + (1 * (50% / 5)));
-    border-bottom-color: #540032;
+    border-bottom-color: #ff0000;
   }
   label:nth-child(3) {
     left: calc(50% + (2 * (50% / 5)));
-    border-bottom-color: #820333;
+    border-bottom-color: #006eff;
   }
   label:nth-child(4) {
     left: calc(50% + (3 * (50% / 5)));
-    border-bottom-color: #C9283E;
+    border-bottom-color: #0044ff;
   }
   label:nth-child(5) {
     left: calc(50% + (4 * (50% / 5)));
-    border-bottom-color: #F0433A;
+    border-bottom-color: #04ff00;
   }
 
   .slide__content h1{
     /* font-family: 'Roboto', sans-serif;  */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-
   }
   
   @keyframes fade-in {
@@ -278,3 +281,68 @@ section.about-us .slideshow {
       opacity: 1;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+  #about_steam_features {
+    text-align: center;
+    position: relative;
+    margin-top:1000px;
+    margin-bottom:-680px;
+    
+}
+
+.about_feature_icon img{
+    height:80px;
+    width:80px;
+    position: absolute;
+    margin-left:-50px; 
+    background-color: #000000;
+    padding:10px 10px 10px 10px ;   
+    border-radius : 20px; 
+    transition: 0.7s;
+    background-color: rgb(64, 64, 64);
+}
+#about_steam_features img:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    
+}
+#about_steam_feature_title{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#about_steam_feature_subtitle{
+    display: block;
+}
+#about_steam_features_grid{
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+.about_feature_content{
+    margin-top:60px;
+    padding:50px 50px 50px 50px ;
+}
+.feature{
+    padding-top:10px;
+    transition: 0.5s;
+}
+.feature:hover{
+    background-color:rgb(136, 136, 136);
+    border-radius:20px;
+    position: relative;
+}
