@@ -173,7 +173,7 @@ input[type="radio"] {
   }
   .slide:nth-child(8) {
     /* background: url(../images/RDR2.jpg); */
-    background: url();
+    background: url(https://th.bing.com/th/id/OIP.6YSncataSFqMZqQ_6g0-fQHaHa?rs=1&pid=ImgDetMain);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -282,16 +282,7 @@ label {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
+/* 3 x 3 - columns x rows */
   #about_steam_features {
     text-align: center;
     position: relative;
@@ -345,4 +336,75 @@ label {
     background-color:rgb(136, 136, 136);
     border-radius:20px;
     position: relative;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+}
+h1#browse{
+    font-size:24px;
+    margin-left:-20px;
+}
+
+section#categoryListing{
+    position: relative;
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left:250px;
+}
+section#categoryListing a{
+    text-decoration: none;
+    color:white;
+    margin-right:200px;
+}
+.box{
+    position: relative;
+    padding:10px 10px 10px 10px ;
+    text-align :center;
+    border: solid grey 1px;
+    border-radius: 10px;;
+    width:300px;
+    height:200px;
+    margin-bottom:50px;
+    transition: 0.5s;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+.box:hover{
+    border:solid red 1px;
+
+}
+.box img{
+    height:100px;
+    width:150px;
+    border-radius : 20px;
+}
+section.imp-notice{
+    background-color: rgb(20, 20, 20);
+    height:350px;
+    width:1897px;
+    margin-left:0px;
+}
+section.imp-notice article{
+    margin-left:200px;
+}
+section.imp-notice h1{
+    position: relative;
+    padding-top:100px;
+    font-size: 26px;
+}
+section.imp-notice p{
+    font-family:'Roboto' ;
+    font-size:20px;
+}
+section.imp-notice img{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    margin-left:1200px;
+    margin-top:-210px;
+    border-radius:5px;
 }
