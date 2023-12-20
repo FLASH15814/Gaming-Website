@@ -14,6 +14,7 @@ nav{
     height:80px;
     border-radius :7px;
     position:sticky;
+    z-index: 1000;
 }
 
 ul{
@@ -53,7 +54,7 @@ nav li a{
 }
 nav li:hover{
     color:rgb(137, 136, 136);
-    opacity:0.5;
+    opacity:0.8;
     padding-right:20px;
     padding-top:20px;
     position:relative;
