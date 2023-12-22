@@ -66,6 +66,10 @@ nav li.Consoles{
   position: relative;
   display: inline-block;
 }
+nav li a:hover{
+  opacity: 0.5;
+  transition: 0.7s ;
+}
 .dropdown{
   display: none;
   position: absolute;
