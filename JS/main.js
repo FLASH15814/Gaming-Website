@@ -110,6 +110,16 @@ targetElements.forEach(targetElement => {
   observer.observe(targetElement);
 });
 
+
+
+
+
+
+
+
+
+
+
   //animations -> slideinright
 
   function handleIntersection2(entries2, observer2) {

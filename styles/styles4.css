@@ -50,6 +50,7 @@ section.choose .border{
     height: 600px;
 }
 section.choose button{
+    cursor: pointer;
     border:none;
     padding:20px 20px 20px 20px;
     font-size:16px;
@@ -181,13 +182,86 @@ section.nintendo h1{
     animation:jump-up 0.9s infinite;
     font-family: 'Ankh Sanctuary',sans-serif;
     font-weight: 100;
+    color:red;
 }
 section.nintendo h2{
     margin-left:-800px;
     margin-top:100px;
     font-weight: 100;
     font-family:'Ankh Sanctuary',sans-serif;
+    color:rgb(0, 225, 255);
 }
+section.nintendo button{
+    border:none;
+    margin-top:10px;
+    cursor: pointer;
+    padding:20px 20px 20px 20px ;
+    font-size:30px;
+    background-color:red;
+    transition: 0.7s ease-in-out;
+    border-radius:5px;
+    font-family:'Ankh Sanctuary',sans-serif;
+    font-weight: 100;
+}
+section.nintendo button:hover{
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 54px 55px, rgba(0, 217, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+section.ps{
+    background: white;
+    color:black;
+    padding-top:50px;
+    padding-bottom:300px;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+section.ps img{
+    height: 500px;
+    display:inline-block;
+}
+section.ps h1{
+    font-family: 'Roboto',sans-serif;
+}
+section.ps h2{
+    display: inline-block;
+    position: absolute;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+section.ps h3{
+    display: inline-block;
+    position:absolute;
+    margin-left: -400px;
+    margin-top:550px;
+    color:gray;
+}
+section.ps a{
+    position: absolute;
+    margin-top:650px;
+    margin-left:-250px;
+}
+section.ps button{
+    cursor:pointer;
+    padding:20px 20px 20px 20px;
+    border:none;
+    height: 50px;
+    width:150px;
+    margin-left:-100px;
+    font-size: 16px;
+    box-shadow: rgba(0, 115, 255, 0.35) 0px 5px 15px;
+    transition:0.5s ease-in-out;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+}
+section.ps button:hover{
+    color:white;
+    background-color: rgb(0, 123, 255);
+}
+section.ps .border-2{
+    display: inline-block;
+    border:solid black 1px;
+    height: 500px;
+}
+
+
 
 @keyframes slide-up{
     0%{
