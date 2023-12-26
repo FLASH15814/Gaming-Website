@@ -4,23 +4,28 @@ section{
     margin-top:-20px;
     background: url(../images/playstation-5-fd-3840x2160.jpg);
     text-align:center;
-    position: relative;
+    position: relative;   
+}
+section.intro{
+    animation: slide-up 0.5s ;
 }
 section.intro h1 {
     padding-top:400px;
     font-size:38px;
+    animation: slide-left 0.5s ;
 }
 section.intro p{
     font-size:20px;
     padding-bottom: 350px;
+    animation: slide-left 0.8s ;
 }
-
 section.choose{
     background-color: white;
     background-image: none;
     margin-top:-25px;
     color:rgb(0, 0, 0);
-    padding-bottom:200px;
+    padding-bottom:280px;
+
 }
 section.choose h1{
     font-family: 'Roboto';
@@ -43,6 +48,17 @@ section.choose .border{
     display: inline-block;
     border:solid black 1px;
     height: 600px;
+}
+section.choose button{
+    border:none;
+    padding:20px 20px 20px 20px;
+    font-size:16px;
+    box-shadow: rgba(0, 115, 255, 0.35) 0px 5px 15px;
+    transition:0.5s ease-in-out;
+}
+section.choose button:hover{
+    background-color: rgb(0, 123, 255);
+    color:white;
 }
 section.xbox{
     background: url(../images/1257986-1920x1080-desktop-full-hd-xbox-background-image.jpg);
@@ -149,6 +165,7 @@ section.xbox video{
     border: solid #000000 50px;
     border-radius: 10px;
     box-shadow: rgba(60, 255, 0, 0.6) 0px 3px 8px;
+    
 }
 section.xbox video:hover{
     transform:scaleZ(100);
@@ -160,5 +177,46 @@ section.nintendo{
     font-size:30px;
 }
 section.nintendo h1{
-    margin-top:-300px;
+    margin-top:-400px;
+    animation:jump-up 0.9s infinite;
+    font-family: 'Ankh Sanctuary',sans-serif;
+    font-weight: 100;
+}
+section.nintendo h2{
+    margin-left:-800px;
+    margin-top:100px;
+    font-weight: 100;
+    font-family:'Ankh Sanctuary',sans-serif;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes slide-left{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transfrom:translateX(0px);
+    }
+}
+@keyframes jump-up{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform : translateY(30px);
+    }
+    100%{
+        transform : translateY(0px);
+    }
+}
+@font-face{
+    font-family: 'Ankh Sanctuary';
+    src: url(../fonts/AnkhSanctuary-nROx4.ttf);
 }

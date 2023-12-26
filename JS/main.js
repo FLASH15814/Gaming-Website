@@ -92,20 +92,23 @@ if (targetElement3) {
 //ANIMATIONS-> slideinleft
 
 function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('slide-in-left');
-        observer.unobserve(entry.target);
-      }
-    });
-  }
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('slide-in-left');
+      observer.unobserve(entry.target);
+    }
+  });
+}
 
- const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-const targetElement = document.querySelector('.anim-slideInLeft');
+// Use querySelectorAll to get all the elements with the class 'anim-slideInLeft'
+const targetElements = document.querySelectorAll('.anim-slideInLeft');
 
-observer.observe(targetElement);
-
+// Use a forEach loop to observe each element
+targetElements.forEach(targetElement => {
+  observer.observe(targetElement);
+});
 
   //animations -> slideinright
 
@@ -116,20 +119,29 @@ observer.observe(targetElement);
         observer2.unobserve(entry.target);
       }
     });
-  }
-  const observer2 = new IntersectionObserver(handleIntersection2, { threshold: 0.5 });
-  const targetElement2 = document.querySelector('.anim-slideInRight');
-  observer2.observe(targetElement2);
+ }
 
-//load event for slideinright
-document.addEventListener('DOMContentLoaded', function () {
-    const textElement = document.querySelector('.animate-2');
+ const observer2 = new IntersectionObserver(handleIntersection2, { threshold: 0.5 });
+
+ // Use querySelectorAll to get all the elements with the class 'anim-slideInRight'
+ const targetElements2 = document.querySelectorAll('.anim-slideInRight');
+
+ // Use a forEach loop to observe each element
+ targetElements2.forEach(targetElement2 => {
+    observer2.observe(targetElement2);
+ });
+
+ // Load event for slideinright
+ document.addEventListener('DOMContentLoaded', function () {
+    const textElements = document.querySelectorAll('.animate-2');
     const image = new Image();
     image.src = 'images/spider-man-remastered.jpeg';
     image.onload = function () {
-      textElement.classList.add('show-2');
+      textElements.forEach(textElement => {
+        textElement.classList.add('show-2');
+      });
     };
-});
+ });
 
 
 //toggle function
