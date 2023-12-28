@@ -1320,6 +1320,11 @@ footer{
   text-align:center;
 }
 
+
+#moving-image {
+  transition: transform 0.2s ease-out;
+}
+
 /* Custom Animations  */
 
 @keyframes fadeOutandSLiderInLeft {

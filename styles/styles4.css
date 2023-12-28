@@ -261,7 +261,9 @@ section.ps .border-2{
     height: 500px;
 }
 
-
+#moving-image {
+    transition: transform 0.2s ease-out;
+  }
 
 @keyframes slide-up{
     0%{

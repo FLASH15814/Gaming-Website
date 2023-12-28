@@ -1,0 +1,124 @@
+/* PS5, PS4, Nintendo and XBOX Selling page css */
+section{
+    background-color: white;
+    height: 2000px;
+    width: 1897px;;
+    color:black;
+    text-align: center;
+}
+section h1{
+    padding-top:30px;
+    font-size:20px;
+    font-family: 'Roboto',sans-serif;
+}
+section h2{
+    color:rgb(50, 50, 50);
+    font-size: 14px;
+}
+section h3{
+    color:grey;
+}
+.slider-wrapper {
+    position: relative;
+    margin-top:40px;
+    margin-left:550px;
+    margin-right:550px;
+    background-color: black;
+  }
+  
+  .slider {
+    --slide-width: clamp(320px, 75vw, 800px);
+    --slide-height: clamp(240px, 75vh, 600px);
+    display: grid;
+    grid-auto-flow: column;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    max-width: var(--slide-width);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 2px 20px rgba(0, 0, 0, 0.25);
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slide {
+    scroll-snap-align: start;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dots a {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    cursor: pointer;
+  }
+  .dots a:hover {
+    opacity: 1;
+  }
+  
+  .caption {
+    display: block;
+    margin-top: 25px;
+    color: #999;
+    letter-spacing: 0.5px;
+  }
+
+article.select{
+    position: relative;
+}
+article.select p{
+    display: inline-block;
+    font-size:18px;
+}
+select{
+    margin-top:10px;
+    width:100px;
+    padding-left:40px;
+    font-size:16px;
+}
+button{
+    padding:10px 20px 10px 20px;
+    font-size:20px;
+    margin-right:10px;
+}
+
+
+
+#notification-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #000000; /* Green background color */
+  color: white;
+  display: none;
+  z-index: 999; /* Set a high z-index to make sure it's on top of other elements */
+}
+
+
+
+#moving-image {
+  transition: transform 0.2s ease-out;
+}
