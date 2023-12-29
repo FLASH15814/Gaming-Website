@@ -33,7 +33,7 @@ function showNotification(message) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var addToCartButton = document.querySelector('button[type="submit"]');
+    var addToCartButton = document.querySelector('a[href="#"]');
     addToCartButton.addEventListener('click', function () {
         showNotification('Item successfully added to the cart!');
         setTimeout(function () {

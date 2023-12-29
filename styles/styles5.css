@@ -1,6 +1,6 @@
 /* PS5, PS4, Nintendo and XBOX Selling page css */
 section{
-    background-color: white;
+    background-color: rgb(253, 249, 249);
     height: 2000px;
     width: 1897px;;
     color:black;
@@ -87,6 +87,7 @@ section h3{
 
 article.select{
     position: relative;
+    margin-top:-50px;
 }
 article.select p{
     display: inline-block;
@@ -98,12 +99,41 @@ select{
     padding-left:40px;
     font-size:16px;
 }
+a[role="button"]{
+  margin-top:10px;
+}
 button{
     padding:10px 20px 10px 20px;
     font-size:20px;
-    margin-right:10px;
+    border:none;    
+   
 }
-
+button:hover{
+  color:white;
+}
+.button-cods{
+  background-color: rgb(255, 230, 0);
+  color:black;
+  margin-right: -10px;;
+  transition: 0.4s ease-in-out;
+}
+.button-cods:hover{
+  border-radius: 5px;
+}
+.button-cods:hover:before{
+  box-shadow: rgba(229, 255, 0, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+.button-cods:after{
+  background-color: #000000;
+}
+.button-cods span{
+  font-family: 'Roboto';
+}
+#moving-image {
+  transition: transform 0.2s ease-out;
+}
 
 
 #notification-container {
@@ -111,14 +141,11 @@ button{
   top: 10px;
   right: 10px;
   padding: 10px;
-  background-color: #000000; /* Green background color */
+  background-color: #000000;
   color: white;
   display: none;
-  z-index: 999; /* Set a high z-index to make sure it's on top of other elements */
+  z-index: 999; 
 }
 
 
 
-#moving-image {
-  transition: transform 0.2s ease-out;
-}
