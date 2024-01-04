@@ -429,7 +429,7 @@ input[type="file"]::file-selector-button:active {
   padding: 0 20px;
   margin-top: -13.5%;
   height: 500px;
-  margin-bottom:-100px;
+  margin-bottom: -100px;
 }
 
 .rating {
@@ -440,6 +440,19 @@ input[type="file"]::file-selector-button:active {
   flex-direction: row-reverse;
   height: 150px;
   position: relative;
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
 }
 
 .rating-0 {
@@ -634,25 +647,91 @@ input[type="file"]::file-selector-button:active {
 
 
 
-/* .feedback {
-  max-width: 360px;
-  background-color: #fff;
-  width: 100%;
-  padding: 30px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
-} */
 
 
 
 
-.other-products-2{
-  margin-top:1%;
+.other-products-2 {
+  margin-top: 1%;
+  text-align: center;
 }
-.box-1{
+
+.other-products-2 .boxes-other {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.boxes-other .box-1 {
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 400px 460px;
+  text-align: center;
+  min-height:450px;
+}
+
+.boxes-other h1 {
   
+  position: absolute;
+  max-width:360px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 74%;
+  padding: 10px;
+  margin: 0;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  margin-top:-200px;
+  margin-bottom:100px;
+}
+
+
+
+.vignette-1{
+  margin-top:-20px;
+  margin-left:-20px;
+  width: 400px;
+  height:450px;
+  background: radial-gradient(circle, rgba(166,166,166,0.47942927170868344) 9%, rgba(0,0,0,0.6474964985994398) 100%, rgba(0,0,0,1) 100%);
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .boxes-other {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .box-1 h1 {
+    white-space: normal;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .boxes-other {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .boxes-other {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .boxes-other {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .boxes-other {
+      grid-template-columns: repeat(1, 1fr);
+  }
 }
