@@ -1390,3 +1390,29 @@ footer{
 }
 
 
+@media only screen and (max-width: 600px) {
+  nav{
+    width:600px;
+  }
+  nav ul{
+    margin-left: -10px;;
+  }
+  nav ul .image-1 img{
+    margin-left:-110px;
+    margin-top: 5px;;
+    width:70px;
+    height: 60px;
+  }
+  nav li a{
+    margin-left:-30px;
+  }
+  nav li a{
+    font-size:16px;
+  }
+  .search-box{
+    margin-left:40px;
+  }
+  .btn-search:focus ~ .input-search{
+    width:150px;
+  }
+}
