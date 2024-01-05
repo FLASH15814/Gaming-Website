@@ -1,8 +1,4 @@
 /* PS5, PS4, Nintendo and XBOX Selling page css */
-*{
-  font-family:'Roboto',sans-serif;
-}
-
 section {
   background-color: rgb(253, 249, 249);
   height: 2000px;
@@ -638,7 +634,7 @@ input[type="file"]::file-selector-button:active {
 .other-products-2 {
   margin-top: 1%;
   text-align: center;
-  margin-left:100px;
+  margin-left:60px;
 }
 
 .other-products-2 .boxes-other {
@@ -655,7 +651,8 @@ input[type="file"]::file-selector-button:active {
   background-repeat: no-repeat;
   background-size: 400px 460px;
   text-align: center;
-  max-height: 450px;
+  min-height: 450px;
+  max-height: 450px;;
   max-width: 400px;
 }
 
@@ -740,6 +737,10 @@ input[type="file"]::file-selector-button:active {
   }
 }
 
+
+.box-1 a button.extra{
+  display: none;;
+}
 /* @media only screen and (max-width: 600px) {
   h1 {
     font-size: 20px;
@@ -821,6 +822,7 @@ label.rate-emoji {
     max-width: 600px;
     padding: 0;
   }
+
   h3.p-sub {
     max-width: 100%;
     margin: 0;
@@ -924,13 +926,11 @@ label.rate-emoji {
   
   label.review-1 {
     margin-left: -70px;
-    
   }
 
   textarea {
     min-width: 200px;
     max-width: 100px;
-    margin-top:0px;
   }
 
   input[type="file"] {
@@ -1052,38 +1052,37 @@ label.rate-emoji {
     grid-template-columns: repeat(2, 1fr);
     margin:0;
     margin-top:300px;
-    
-  }
-  .boxes-other .box-1 {
-    all:initial;
-    background-size: 280px 350px;
-    height: 350px;
-    margin-right:10px;
-    margin-top:0px;
-    margin-bottom:30px;
   }
 
   .boxes-other h1 {
     display: none;
-    max-width: 300px;
-    margin-left:20px;
-  }
-  .box-1 h3{
-    color:rgb(255, 255, 255);
-    display: block;
-    padding:20px 20px 20px 20px;
-  }
-  .box-1:nth-child(1) h3 {
-    
-    color:rgb(0, 0, 0);
+    max-width: 600px;
   }
 
- 
+  .boxes-other h3 {
+    display: block;
+  }
+
+  .boxes-other .box-1 {
+    background-size: 280px 350px;
+    height: 0px;
+    margin-top:-10px;
+    min-height: 380px;;
+    /* margin-bottom:-80px; */
+  }
 
   .boxes-other .box-1 .vignette-1 {
     display: none;
   }
-
+  .box-1 a{
+    text-decoration: none;
+  }
+  .box-1 a button.extra{
+    display: block;
+    flex-wrap:wrap;
+    margin-top:230px;
+    margin-left:95px;
+  }
   /* .other-products-2 img{
     width:49%;
     height:50px;
@@ -1095,8 +1094,4 @@ label.rate-emoji {
  .test-3 .block-2,.test-3 .payment-opt{
   display: inline;
  } */
-
- 
-
-
 }
