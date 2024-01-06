@@ -1,4 +1,7 @@
 /* PS5, PS4, Nintendo and XBOX Selling page css */
+*{
+  font-family: 'Roboto',sans-serif;
+}
 section {
   background-color: rgb(253, 249, 249);
   height: 2000px;
@@ -634,7 +637,7 @@ input[type="file"]::file-selector-button:active {
 .other-products-2 {
   margin-top: 1%;
   text-align: center;
-  margin-left:60px;
+  margin-left:90px;
 }
 
 .other-products-2 .boxes-other {
@@ -649,7 +652,7 @@ input[type="file"]::file-selector-button:active {
   position: relative;
   /* border-radius: 5px; */
   background-repeat: no-repeat;
-  background-size: 400px 460px;
+  background-size: 400px 465px;
   text-align: center;
   min-height: 450px;
   max-height: 450px;;
@@ -704,6 +707,7 @@ input[type="file"]::file-selector-button:active {
 }
 .box-1 .vignette-1 button{
   cursor: pointer;
+  margin-left:-5px;
 }
 
 .box-1 h3 {
@@ -885,7 +889,7 @@ label.rate-emoji {
   }
 
   .block ul {
-    margin-left: -40px;
+    margin-left: -58px;
     display: none;
   }
 
@@ -1074,6 +1078,45 @@ label.rate-emoji {
   .boxes-other .box-1 .vignette-1 {
     display: none;
   }
+
+  .box-1:nth-child(1) h3{
+    background: linear-gradient(77deg, rgb(0, 0, 0) 25%, rgba(0,52,255,1) 65%, rgba(0,0,0,1) 81%);
+    -webkit-background-clip: text;
+    color:transparent;
+  }
+  .box-1:nth-child(2) h3{
+    background: linear-gradient(77deg, rgba(0,0,0,1) 53%, rgba(1,255,0,1) 100%);
+    -webkit-background-clip: text;
+    color:transparent;
+  }
+  .box-1:nth-child(3) h3{
+    background: linear-gradient(77deg, rgb(255, 0, 0) 46%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    color:transparent;
+  }
+  .box-1:nth-child(4) h3{
+    background: linear-gradient(77deg, rgba(255,255,255,1) 0%, rgba(235,0,255,1) 33%);
+    -webkit-background-clip: text;
+    color:transparent;
+  }
+  .box-1 button{
+    border-radius: 2px;
+  }
+  .box-1:nth-child(1) button{
+    background-color: rgb(0, 128, 255);;
+  }
+  .box-1:nth-child(2) button{
+    background-color:rgb(0, 177, 0);
+  }
+  .box-1:nth-child(3) button{
+    background-color: red;
+    opacity: 0.9;
+  }
+  .box-1:nth-child(4) button{
+    background-color: rgb(201, 0, 201);
+  }
+
+
   .box-1 a{
     text-decoration: none;
   }
@@ -1081,17 +1124,7 @@ label.rate-emoji {
     display: block;
     flex-wrap:wrap;
     margin-top:230px;
-    margin-left:95px;
-
-
-
-
-
-
-
-
-
-    
+    margin-left:95px;    
   }
   /* .other-products-2 img{
     width:49%;

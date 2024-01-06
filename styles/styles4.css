@@ -1,4 +1,6 @@
-
+body{
+    max-width:100%;
+}
 
 section{
     margin-top:-20px;
