@@ -298,3 +298,44 @@ section.ps .border-2{
     font-family: 'Ankh Sanctuary';
     src: url(../fonts/AnkhSanctuary-nROx4.ttf);
 }
+
+
+
+
+@media only screen and (max-width:600px) {
+    
+    html{
+        /* min-width: 600px; */
+    }
+    body{
+        padding:0px;
+        /* min-width: 600px; */
+        max-width: 600px;;
+    }
+    section#moving-image {
+        margin:0;
+        /* /* height: auto; */
+        background-size: 600px 330px; 
+    }
+    section h1{
+        /* margin-top:-300px; */
+    }
+    video{
+        margin-left:-500px;
+    }
+    .search-box {
+        margin-left: 450px;
+      }
+    
+      .btn-search:focus~.input-search {
+        width: 150px;
+      }
+      img{
+        width:10px;
+      }
+      section{
+        background-size: 1000px 800px;;
+      }
+}
+
+
