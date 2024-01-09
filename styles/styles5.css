@@ -2,7 +2,6 @@
 *{
   font-family: 'Roboto',sans-serif;
 }
-body{}
 section {
   /* background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%); */
   background: white;
@@ -1144,3 +1143,4 @@ label.rate-emoji {
 /* body{
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%);
 } */
+
